@@ -1,15 +1,4 @@
-#include <iostream>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <vector>
-#include <set>
-#include <map>
-#include <deque>
-#include <stack>
-#include <queue>
-#include <algorithm>
+#define <bits/stdc++.h>
 #define _ ios_base::sync_with_stdio(0);cin.tie(0);
 
 using namespace std;
