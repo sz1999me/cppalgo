@@ -42,7 +42,7 @@ int main() {
 int buy_sell(vector<int> &v) {
   int low=0, buy=0, sell=0, diff=0;
   
-  for (int i=0, s= v.size(); i<s;i++) {
+  for (int i=0, s= v.size(); i<s; i++) {
     if (v[i]<v[low]) {
       low=i;
       continue;
@@ -56,5 +56,4 @@ int buy_sell(vector<int> &v) {
   }
   
   return v[sell]-v[buy];
-  
 }
