@@ -34,7 +34,7 @@ int main() {
 
 void bubblesort(vector<int> &v) {
   for (int i=0, s=v.size(); i<s; i++) {
-    for (int j=v.size()-1; j>i;j--) {
+    for (int j=v.size()-1; j>i; j--) {
       if (v[j-1] > v[j]) {
         int t=v[j-1];
         v[j-1]=v[j];
