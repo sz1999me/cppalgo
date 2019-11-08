@@ -35,26 +35,25 @@ int main() {
   v.push_back(94);
   v.push_back(90);
   v.push_back(97);
-  
+
   cout << buy_sell(v);
 }
 
 int buy_sell(vector<int> &v) {
   int low=0, buy=0, sell=0, diff=0;
-  
-  for (int i=0, s= v.size(); i<s;i++) {
+
+  for (int i=0, s= v.size(); i<s; i++) {
     if (v[i]<v[low]) {
       low=i;
       continue;
     }
-    
+
     if (v[i]-v[low]>diff) {
       buy = low;
       diff = v[i]-v[low];
       sell = i;
     }
   }
-  
+
   return v[sell]-v[buy];
-  
 }
