@@ -25,9 +25,9 @@ int main() {
   v.push_back(9);
   v.push_back(7);
   v.push_back(2);
-  
+
   mergesort(v);
-  
+
   for (int i=0, s=v.size(); i<s; i++) {
     cout << v[i] << ",";
   }
@@ -44,11 +44,11 @@ void ms(vector<int> &v, int left, int right) {
   } else {
     return;
   }
-  
+
   int i=left, j=(right+left)/2+1, m=j, k=0;
-  
+
   vector<int> r(right-left+1);
-  
+
   while (i<m && j<=right) {
     if (v[i]<v[j]) {
       r[k]=v[i];
@@ -59,19 +59,19 @@ void ms(vector<int> &v, int left, int right) {
     }
     k++;
   }
-  
+
   while (i<m) {
     r[k]=v[i];
     i++;
     k++;
   }
-  
+
   while (j<=right) {
     r[k]=v[j];
     j++;
     k++;
   }
-  
+
   for (int i=0, j=left; j<=right; i++, j++) {
     v[j] = r[i];
   }
