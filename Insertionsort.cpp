@@ -24,9 +24,9 @@ int main() {
   v.push_back(94);
   v.push_back(90);
   v.push_back(97);
-  
+
   insertionsort(v);
-  
+
   for (int i=0; i<v.size(); i++) {
     cout << v[i] << endl;
   }
